@@ -1,0 +1,14 @@
+/* HOVER ANIMATION */
+
+@keyframes hover {
+  /* make your image go up and down by 5px in y-axis */
+  0% {
+    transform:translatY(0)
+  }
+  50% {
+    transform:translateY(-5px)
+  }
+  100% {
+    transform:translateY(0)
+  }
+}
