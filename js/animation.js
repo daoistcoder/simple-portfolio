@@ -59,9 +59,18 @@ let lastReverseAnimation = "";
 
 // play animation animation handler
 const playAnimation = (animation, reverseAnimation) => {
+  // Remove all the animation class from heroImg
+  heroImage.className = "";
+
   if (lastReverseAnimation !== "") {
     // Clicked any of the cornerBtns
     // play reverse animation
+    heroImage.classList.add(lastReverseAnimation);
+    setTimeout(() => {
+      heroImage.classList.remove(lastReverseAnimation)
+      heroImage.classList.add(animation);
+      lastReverseAnimation = reverseAnimation;
+    }, 200)
   } else {
     // play forward animation
     heroImage.classList.add(animation);
