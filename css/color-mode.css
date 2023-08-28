@@ -81,7 +81,7 @@
 #color-mode {
   background: var(--bg-alt-2);
   height: 2.75rem;
-  width: 4rem;
+  width: 4.65rem;
   border-radius: 3rem;
 
   /* positioning */
@@ -104,6 +104,6 @@
   background-image: var(--moon);
 }
 
-.dark-mode #toggle-button {
+.dark-mode #color-mode {
   justify-content: flex-end;
 }
