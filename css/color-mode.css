@@ -42,7 +42,7 @@
 :root.dark-mode {
   /* colors in dark-mode */
   --bg: rgb(96, 94, 73);
-  --bg-alt: rgb(54, 53, 41);
+  --bg-alt: rgb(197, 195, 172);
   --bg-alt-2: rgb(193, 189, 154);
   --bg-transparent: #333333f5;
   --border: 0.05rem solid rgb(235, 232, 201);
