@@ -7,17 +7,25 @@ const root = document.querySelector(":root");
 const storageKey = "color-mode";
 const defaultMode = "light-mode";
 
+
+// update the toggleButton
+const updateToggleButton = () => {
+  if (root.classList.contains("dark-mode")) {
+    toggleButton.style.backgroundImage = "var(--moon)";
+  } else {
+    toggleButton.style.backgroundImage = "var(--sun)";
+  }
+}
+
 //  loadColorMode() -> Load the user's preffered color-mode from ls
 const loadColorMode = () => {
-
+  const colorMode = localStorage.getItem(storageKey);
+  root.classList.add(colorMode);
+  updateToggleButton();
 }
 
 loadColorMode();
 
-// Toggle the color mode, event listener
-toggleButton.addEventListener("click", () => {
-  
-})
 
 
 // Save the USER's preffered color mode to ls
@@ -30,8 +38,14 @@ const saveColorMode = () => {
   root.classList.add(currentMode);
   // save in ls
   localStorage.setItem(storageKey, currentMode);
+
+  updateToggleButton();
 }
 
+// Toggle the color mode, event listener
+toggleButton.addEventListener("click", () => {
+  saveColorMode();
+})
 
 
 // console.log(toggleButton);
