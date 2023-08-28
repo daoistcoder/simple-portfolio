@@ -8,7 +8,7 @@
   --bg-transparent: #ffffffe8;
   --border: 0.01rem solid #333;
   --text: #333;
-  --text-alt: #fff;
+  --text-alt: rgb(54, 53, 41);
 
   /* face animations */
   --tl-1: url(../assets/face-animation-light/tl-1.png);
@@ -47,6 +47,7 @@
   --bg-transparent: #333333f5;
   --border: 0.01rem solid rgb(198, 197, 189);
   --text: #fff;
+  --text-alt: rgb(54, 53, 41);
 
   /* face animations in dark-mode */
   --tl-1: url(../assets/face-animation-dark/tlw-1.png);
