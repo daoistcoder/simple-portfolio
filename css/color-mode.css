@@ -38,6 +38,44 @@
   --sun: url(../assets/icons/sun.png);
 }
 
+ /* Dark-mode root */
+:root.dark-mode {
+  /* colors in dark-mode */
+  --bg: rgb(96, 94, 73);
+  --bg-alt: rgb(54, 53, 41);
+  --bg-alt-2:  rgb(197, 195, 172);
+  --bg-transparent: #333333f5;
+  --border: 00.1rem #5a5a5a;
+  --text: #fff;
+
+  /* face animations in dark-mode */
+  --tl-1: url(../assets/face-animation-dark/tlw-1.png);
+  --tl-2: url(../assets/face-animation-dark/tlw-2.png);
+  --tl-3: url(../assets/face-animation-dark/tlw-3.png);
+  --tl-4: url(../assets/face-animation-dark/tlw-4.png);
+  --tl-5: url(../assets/face-animation-dark/tlw-5.png);
+
+  --tr-1: url(../assets/face-animation-dark/trw-1.png);
+  --tr-2: url(../assets/face-animation-dark/trw-2.png);
+  --tr-3: url(../assets/face-animation-dark/trw-3.png);
+  --tr-4: url(../assets/face-animation-dark/trw-4.png);
+  --tr-5: url(../assets/face-animation-dark/trw-5.png);
+
+  --bl-1: url(../assets/face-animation-dark/blw-1.png);
+  --bl-2: url(../assets/face-animation-dark/blw-2.png);
+  --bl-3: url(../assets/face-animation-dark/blw-3.png);
+  --bl-4: url(../assets/face-animation-dark/blw-4.png);
+  --bl-5: url(../assets/face-animation-dark/blw-5.png);
+
+  --br-1: url(../assets/face-animation-dark/brw-1.png);
+  --br-2: url(../assets/face-animation-dark/brw-2.png);
+  --br-3: url(../assets/face-animation-dark/brw-3.png);
+  --br-4: url(../assets/face-animation-dark/brw-4.png);
+  --br-5: url(../assets/face-animation-dark/brw-5.png);
+
+  --moon: url(../assets/icons/moon.png);
+}
+
 /* COLOR MODE TOGGLE BUTTON */
 
 #color-mode {
