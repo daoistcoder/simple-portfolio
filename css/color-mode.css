@@ -3,9 +3,33 @@
 :root {
   /* colors */
   --bg: rgb(197, 195, 172);
+  --bg-alt-2: rgb(96, 94, 73);
   --text: black;
 
   /* face animations */
   --tl-1: url(../assets/face-animation-light/tl-1.png);
 }
 
+/* COLOR MODE TOGGLE BUTTON */
+
+#color-mode {
+  background: var(--bg-alt-2);
+  height: 2.75rem;
+  width: 4rem;
+  border-radius: 3rem;
+
+  /* positioning */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#toggle-button {
+  background-image: var(--sun);
+  background-size: cover;
+  cursor: pointer;
+}
