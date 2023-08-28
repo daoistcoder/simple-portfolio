@@ -136,7 +136,7 @@ h1, h2, h5, p {
 
  /* ARTICLE STYLING */
 article {
-  background: rgb(245, 245, 245);
+  background: var(--bg-alt-2);
   font-family: 0.8rem;
 
   list-style: none;

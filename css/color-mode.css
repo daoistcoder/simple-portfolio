@@ -6,9 +6,9 @@
   --bg-alt: rgb(54, 53, 41);
   --bg-alt-2: rgb(96, 94, 73);
   --bg-transparent: #ffffffe8;
-  --border: 0.01rem solid #333;
+  --border: 0.05rem solid #333;
   --text: #333;
-  --text-alt: rgb(54, 53, 41);
+  --text-alt: rgb(197, 195, 172);
 
   /* face animations */
   --tl-1: url(../assets/face-animation-light/tl-1.png);
@@ -43,9 +43,9 @@
   /* colors in dark-mode */
   --bg: rgb(96, 94, 73);
   --bg-alt: rgb(54, 53, 41);
-  --bg-alt-2: rgb(197, 195, 172);
+  --bg-alt-2: rgb(193, 189, 154);
   --bg-transparent: #333333f5;
-  --border: 0.01rem solid rgb(198, 197, 189);
+  --border: 0.05rem solid rgb(235, 232, 201);
   --text: #fff;
   --text-alt: rgb(54, 53, 41);
 
