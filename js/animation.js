@@ -53,3 +53,173 @@ const handleWindowResize = () => {
 
   // event listener to window{} for resize events
 window.addEventListener("resize", handleWindowResize);
+
+// store last reverse animation, ready to be played
+let lastReverseAnimation = "";
+
+// play animation animation handler
+const playAnimation = (animation, reverseAnimation) => {
+  if (lastReverseAnimation !== "") {
+    // Clicked any of the cornerBtns
+    // play reverse animation
+  } else {
+    // play forward animation
+    heroImage.classList.add(animation);
+    lastReverseAnimation = reverseAnimation;
+  }
+}
+
+// play closing animation animation handler
+const playClosingAnimation = (reverseAnimation) => {
+  
+}
+
+// top-left onClick corner button function
+tlBtn.onCllick = () => {
+  if (activeCorner  === "top-left" ) {
+    playClosingAnimation("reverse-animate-top-left")
+  } else {
+    // setting cornerBtns innerHtml to default
+    trBtn.innerHTML = "Experience";
+    blBtn.innerHTML = "Projects";
+    brBtn.innerHTML = "Contact";
+
+    // setting activeCorner
+    activeCorner = "top-left";
+    tlBtn.innerHTML = "&uaar; <br> About";
+
+    handleWindowResize();
+    playAnimation("animate-top-left", "reverse-animate-top-left");
+
+    // Change Background colors
+    tlBtn.style.background = bgColorAlt;
+    trBtn.style.background = bgColor;
+    blBtn.style.background = bgColor;
+    brBtn.style.background = bgColor;
+    
+    // Change Text colors
+    tlBtn.style.color = textColorAlt;
+    trBtn.style.color = textColor;
+    blBtn.style.color = textColor;
+    brBtn.style.color = textColor;
+    
+    // Change positions of the activeCorner
+    tlBtn.style.transform = tlActive;
+    trBtn.style.transform = trHidden;
+    blBtn.style.transform = blHidden;
+    brBtn.style.transform = brHidden;
+
+
+  }
+}
+
+// top-right onClick corner button function
+trBtn.onCllick = () => {
+  if (activeCorner  === "top-right" ) {
+    playClosingAnimation("reverse-animate-top-right")
+  } else {
+    // setting cornerBtns innerHtml to default
+    tlBtn.innerHTML = "About";
+    blBtn.innerHTML = "Projects";
+    brBtn.innerHTML = "Contact";
+
+    // setting activeCorner
+    activeCorner = "top-right";
+    trBtn.innerHTML = "&uaar; <br> Experience";
+
+    handleWindowResize();
+    playAnimation("animate-top-right", "reverse-animate-top-right");
+
+    // Change Background colors
+    trBtn.style.background = bgColorAlt;
+    tlBtn.style.background = bgColor;
+    blBtn.style.background = bgColor;
+    brBtn.style.background = bgColor;
+    
+    // Change Text colors
+    trBtn.style.color = textColorAlt;
+    tlBtn.style.color = textColor;
+    blBtn.style.color = textColor;
+    brBtn.style.color = textColor;
+    
+    // Change positions of the activeCorner
+    trBtn.style.transform = trActive;
+    tlBtn.style.transform = tlHidden;
+    blBtn.style.transform = blHidden;
+    brBtn.style.transform = brHidden;
+  }
+}
+
+// bottom-left onClick corner button function
+blBtn.onCllick = () => {
+  if (activeCorner  === "bottom-left" ) {
+    playClosingAnimation("reverse-animate-bottom-left")
+  } else {
+    // setting cornerBtns innerHtml to default
+    tlBtn.innerHTML = "About";
+    trBtn.innerHTML = "Experience";
+    brBtn.innerHTML = "Contact";
+
+    // setting activeCorner
+    activeCorner = "bottom-left";
+    blBtn.innerHTML = "Projects <br> &darr;";
+
+    handleWindowResize();
+    playAnimation("animate-bottom-left", "reverse-animate-bottom-left");
+
+    // Change Background colors
+    blBtn.style.background = bgColorAlt;
+    tlBtn.style.background = bgColor;
+    trBtn.style.background = bgColor;
+    brBtn.style.background = bgColor;
+    
+    // Change Text colors
+    blBtn.style.color = textColorAlt;
+    tlBtn.style.color = textColor;
+    trBtn.style.color = textColor;
+    brBtn.style.color = textColor;
+    
+    // Change positions of the activeCorner
+    blBtn.style.transform = blActive;
+    tlBtn.style.transform = tlHidden;
+    trBtn.style.transform = trHidden;
+    brBtn.style.transform = brHidden;
+  }
+}
+
+// bottom-right onClick corner button function
+brBtn.onCllick = () => {
+  if (activeCorner  === "bottom-right" ) {
+    playClosingAnimation("reverse-animate-bottom-right")
+  } else {
+    // setting cornerBtns innerHtml to default
+    tlBtn.innerHTML = "About";
+    trBtn.innerHTML = "Experience";
+    blBtn.innerHTML = "Projects";
+
+    // setting activeCorner
+    activeCorner = "bottom-right";
+    brBtn.innerHTML = "Contact <br> &darr;";
+
+    handleWindowResize();
+    playAnimation("animate-bottom-right", "reverse-animate-bottom-right");
+
+    // Change Background colors
+    brBtn.style.background = bgColorAlt;
+    trBtn.style.background = bgColor;
+    tlBtn.style.background = bgColor;
+    blBtn.style.background = bgColor;
+    
+    // Change Text colors
+    brBtn.style.color = textColorAlt;
+    trBtn.style.color = textColor;
+    tlBtn.style.color = textColor;
+    blBtn.style.color = textColor;
+    
+    // Change positions of the activeCorner
+    brBtn.style.transform = brActive;
+    trBtn.style.transform = trHidden;
+    tlBtn.style.transform = tlHidden;
+    blBtn.style.transform = blHidden;
+  }
+}

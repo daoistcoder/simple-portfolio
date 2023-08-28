@@ -191,7 +191,7 @@ article {
   width: 30vw;
   top: 10vh;
   left: 0;
-  /* transform: translateX(-100vw) translateY(-100vh); */
+  transform: translateX(-100vw) translateY(-100vh);
  }
 
 
@@ -204,6 +204,13 @@ article {
   transform: rotate(45deg);
  }
 
+ #grid__tr__content {
+  width: 30vw;
+  top: 10vh;
+  right: 0;
+  transform: translateX(100vw) translateY(-100vh);
+ }
+
  /* BOTTOM LEFT CORNER */
  #grid__bl__btn {
   bottom: -11.5rem;
@@ -212,10 +219,24 @@ article {
   transform: rotate(45deg);
  }
 
+ #grid__bl__content {
+  width: 30vw;
+  top: 10vh;
+  left: 0;
+  transform: translateX(-100vw) translateY(100vh);
+ }
+
  /* BOTTOM RIGHT CORNER */
  #grid__br__btn {
   bottom: -11.5rem;
   right: -11.5rem;
 
   transform: rotate(-45deg);
+ }
+
+ #grid__br__content {
+  width: 30vw;
+  top: 10vh;
+  right: 0;
+  transform: translateX(100vw) translateY(100vh);
  }
