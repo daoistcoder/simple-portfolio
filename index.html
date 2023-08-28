@@ -1,46 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>jeromeballena.dev</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>jeromeballena.dev</title>
 
+        <!-- Assets -->
+        <link
+            rel="icon"
+            href="./assets/icons/favicon.ico"
+            type="image/x-icon"
+        />
 
-  <!-- Assets -->
-  <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+        <!-- Scripts -->
+        <script src="js/animation.js" defer></script>
+        <script src="js/color-mode.js" defer></script>
+        <script src="js/project-slideshow.js" defer></script>
 
+        <!--  Styles -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/color-mode.css" />
+        <link rel="stylesheet" href="css/animation.css" />
+    </head>
+    <body>
+        <div id="hero">
+            <h5>Hello I'm</h5>
+            <h1>Jerome Ballena</h1>
+            <p>Fullstack Developer</p>
 
- <!-- Scripts -->
-  <script src="js/animation.js" defer></script>
-  <script src="js/color-mode.js" defer></script>
-  <script src="js/project-slideshow.js" defer></script>
+            <!-- Block, Element, Modifer (BEM) naming Convention -->
+            <div id="hero__animation">
+                <div id="hero__animation__img"></div>
+            </div>
+        </div>
 
+        <nav id="grid">
+            <div id="grid__tl">
+                <div id="grid__tl__btn">About</div>
+                <div id="grid__tl__content">
+                    <div class="cards">
+                        <div class="cards__content">
+                            <article>
+                                <img
+                                    class="icon"
+                                    src="./assets/icons/experience.png"
+                                    alt="experience icon"
+                                />
+                                <h2>Experience</h2>
+                                <p>
+                                  6 Months +  
+                                  <br>Developer 
+                                  <br>Experience
+                                </p>
+                            </article>
+                            <p class="cards_content__text">
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                            </p>
+                        </div>
 
-  <!--  Styles -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/color-mode.css">
-  <link rel="stylesheet" href="css/animation.css">
+                        <div class="cards__content">
+                          <article>
+                              <img
+                                  class="icon"
+                                  src="./assets/icons/education.png"
+                                  alt="education icon"
+                              />
+                              <h2>Education</h2>
+                              <p>
+                               BS Information Technology
+                              </p>
+                          </article>
+                          <p class="cards_content__text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                          </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-
-</head>
-<body>
-  <div id="hero">
-    <h5>Hello I'm</h5>
-    <h1>Jerome Ballena</h1>
-    <p>Fullstack Developer</p>
-
-    <!-- Block, Element, Modifer (BEM) naming Convention -->
-    <div id="hero__animation">
-      <div id="hero__animation__img"></div>
-    </div>
-  </div>
-
-  <div id="color-mode">
-    <div id="toggle-button" class="icon">
-
-    </div>
-  </div>
-  
-  
-</body>
+        <div id="color-mode">
+            <div id="toggle-button" class="icon"></div>
+        </div>
+    </body>
 </html>

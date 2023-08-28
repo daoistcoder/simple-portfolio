@@ -6,7 +6,7 @@
   --bg-alt: rgb(54, 53, 41);
   --bg-alt-2: rgb(96, 94, 73);
   --bg-transparent: #ffffffe8;
-  --border: 00.1rem #333;
+  --border: 0.01rem solid #333;
   --text: #333;
   --text-alt: #fff;
 
@@ -43,9 +43,9 @@
   /* colors in dark-mode */
   --bg: rgb(96, 94, 73);
   --bg-alt: rgb(54, 53, 41);
-  --bg-alt-2:  rgb(197, 195, 172);
+  --bg-alt-2: rgb(197, 195, 172);
   --bg-transparent: #333333f5;
-  --border: 00.1rem #5a5a5a;
+  --border: 0.01rem solid rgb(198, 197, 189);
   --text: #fff;
 
   /* face animations in dark-mode */
