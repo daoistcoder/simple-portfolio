@@ -16,7 +16,7 @@
  /* HERO IMAGE ANIMATION */
 
 /* --> ANIMATE TOP LEFT */
-.animation-top-left,
+.animate-top-left,
 .reverse-animate-top-left {
   animation-fill-mode: forwards;
   animation-duration: 0.2s;

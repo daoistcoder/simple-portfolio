@@ -84,7 +84,7 @@ const playClosingAnimation = (reverseAnimation) => {
 }
 
 // top-left onClick corner button function
-tlBtn.onCllick = () => {
+tlBtn.onclick = () => {
   if (activeCorner  === "top-left" ) {
     playClosingAnimation("reverse-animate-top-left")
   } else {
@@ -123,7 +123,7 @@ tlBtn.onCllick = () => {
 }
 
 // top-right onClick corner button function
-trBtn.onCllick = () => {
+trBtn.onclick = () => {
   if (activeCorner  === "top-right" ) {
     playClosingAnimation("reverse-animate-top-right")
   } else {
@@ -160,7 +160,7 @@ trBtn.onCllick = () => {
 }
 
 // bottom-left onClick corner button function
-blBtn.onCllick = () => {
+blBtn.onclick = () => {
   if (activeCorner  === "bottom-left" ) {
     playClosingAnimation("reverse-animate-bottom-left")
   } else {
@@ -197,7 +197,7 @@ blBtn.onCllick = () => {
 }
 
 // bottom-right onClick corner button function
-brBtn.onCllick = () => {
+brBtn.onclick = () => {
   if (activeCorner  === "bottom-right" ) {
     playClosingAnimation("reverse-animate-bottom-right")
   } else {
