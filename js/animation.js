@@ -140,41 +140,41 @@ tlBtn.onclick = () => {
 }
 
 // top-right onClick corner button function
-// trBtn.onclick = () => {
-//   if (activeCorner  === "top-right" ) {
-//     playClosingAnimation("reverse-animate-top-right")
-//   } else {
-//     // setting cornerBtns innerHtml to default
-//     tlBtn.innerHTML = "About";
-//     blBtn.innerHTML = "Projects";
-//     brBtn.innerHTML = "Contact";
+trBtn.onclick = () => {
+  if (activeCorner  === "top-right" ) {
+    playClosingAnimation("reverse-animate-top-right")
+  } else {
+    // setting cornerBtns innerHtml to default
+    tlBtn.innerHTML = "About";
+    blBtn.innerHTML = "Projects";
+    brBtn.innerHTML = "Contact";
 
-//     // setting activeCorner
-//     activeCorner = "top-right";
-//     trBtn.innerHTML = "&uaar; <br> Experience";
+    // setting activeCorner
+    activeCorner = "top-right";
+    trBtn.innerHTML = "&uaar; <br> Experience";
 
-//     handleWindowResize();
-//     playAnimation("animate-top-right", "reverse-animate-top-right");
+    handleWindowResize();
+    playAnimation("animate-top-right", "reverse-animate-top-right");
 
-//     // Change Background colors
-//     trBtn.style.background = bgColorAlt;
-//     tlBtn.style.background = bgColor;
-//     blBtn.style.background = bgColor;
-//     brBtn.style.background = bgColor;
+    // Change Background colors
+    trBtn.style.background = bgColorAlt;
+    tlBtn.style.background = bgColor;
+    blBtn.style.background = bgColor;
+    brBtn.style.background = bgColor;
     
-//     // Change Text colors
-//     trBtn.style.color = textColorAlt;
-//     tlBtn.style.color = textColor;
-//     blBtn.style.color = textColor;
-//     brBtn.style.color = textColor;
+    // Change Text colors
+    trBtn.style.color = textColorAlt;
+    tlBtn.style.color = textColor;
+    blBtn.style.color = textColor;
+    brBtn.style.color = textColor;
     
-//     // Change positions of the activeCorner
-//     trBtn.style.transform = trActive;
-//     tlBtn.style.transform = tlHidden;
-//     blBtn.style.transform = blHidden;
-//     brBtn.style.transform = brHidden;
-//   }
-// }
+    // Change positions of the activeCorner
+    trBtn.style.transform = trActive;
+    tlBtn.style.transform = tlHidden;
+    blBtn.style.transform = blHidden;
+    brBtn.style.transform = brHidden;
+  }
+}
 
 // bottom-left onClick corner button function
 // blBtn.onclick = () => {
