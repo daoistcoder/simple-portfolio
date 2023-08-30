@@ -10,9 +10,9 @@ const brGrid = document.querySelector("#grid__br");
 
 //  mediaquery buttons
 const tlBtn = document.querySelector("#grid__tl__btn");
-// const trBtn = document.querySelector("#grid__tr__btn");
-// const blBtn = document.querySelector("#grid__bl__btn");
-// const brBtn = document.querySelector("#grid__br__btn");
+const trBtn = document.querySelector("#grid__tr__btn");
+const blBtn = document.querySelector("#grid__bl__btn");
+const brBtn = document.querySelector("#grid__br__btn");
 
 //  mediaquery contents
 const tlContent = document.querySelector("#grid__tl__content");
