@@ -17,9 +17,9 @@ const brBtn = document.querySelector("#grid__br__btn");
 //  mediaquery contents
 const tlContent = document.querySelector("#grid__tl__content");
 console.log(tlContent)
-// const trContent = document.querySelector("#grid__tr__content");
-// const blContent = document.querySelector("#grid__bl__content");
-// const brContent = document.querySelector("#grid__br__content");
+const trContent = document.querySelector("#grid__tr__content");
+const blContent = document.querySelector("#grid__bl__content");
+const brContent = document.querySelector("#grid__br__content");
 
 // const project1 = document.querySelector(".p-1")
 // const project2 = document.querySelector(".p-2")
