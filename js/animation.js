@@ -108,9 +108,9 @@ tlBtn.onclick = () => {
     playClosingAnimation("reverse-animate-top-left")
   } else {
     // setting cornerBtns innerHtml to default
-    // trBtn.innerHTML = "Experience";
-    // blBtn.innerHTML = "Projects";
-    // brBtn.innerHTML = "Contact";
+    trBtn.innerHTML = "Experience";
+    blBtn.innerHTML = "Projects";
+    brBtn.innerHTML = "Contact";
 
     // setting activeCorner
     activeCorner = "top-left";
@@ -121,23 +121,21 @@ tlBtn.onclick = () => {
 
     // Change Background colors
     tlBtn.style.background = bgColorAlt;
-    // trBtn.style.background = bgColor;
-    // blBtn.style.background = bgColor;
-    // brBtn.style.background = bgColor;
+    trBtn.style.background = bgColor;
+    blBtn.style.background = bgColor;
+    brBtn.style.background = bgColor;
     
     // Change Text colors
     tlBtn.style.color = textColorAlt;
-    // trBtn.style.color = textColor;
-    // blBtn.style.color = textColor;
-    // brBtn.style.color = textColor;
+    trBtn.style.color = textColor;
+    blBtn.style.color = textColor;
+    brBtn.style.color = textColor;
     
     // Change positions of the activeCorner
     tlContent.style.transform = tlActive;
-    // trBtn.style.transform = trHidden;
-    // blBtn.style.transform = blHidden;
-    // brBtn.style.transform = brHidden;
-
-
+    trBtn.style.transform = trHidden;
+    blBtn.style.transform = blHidden;
+    brBtn.style.transform = brHidden;
   }
 }
 
