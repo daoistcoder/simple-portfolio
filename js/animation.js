@@ -214,38 +214,38 @@ blBtn.onclick = () => {
 }
 
 // bottom-right onClick corner button function
-// brBtn.onclick = () => {
-//   if (activeCorner  === "bottom-right" ) {
-//     playClosingAnimation("reverse-animate-bottom-right")
-//   } else {
-//     // setting cornerBtns innerHtml to default
-//     tlBtn.innerHTML = "About";
-//     trBtn.innerHTML = "Experience";
-//     blBtn.innerHTML = "Projects";
+brBtn.onclick = () => {
+  if (activeCorner  === "bottom-right" ) {
+    playClosingAnimation("reverse-animate-bottom-right")
+  } else {
+    // setting cornerBtns innerHtml to default
+    tlBtn.innerHTML = "About";
+    trBtn.innerHTML = "Experience";
+    blBtn.innerHTML = "Projects";
 
-//     // setting activeCorner
-//     activeCorner = "bottom-right";
-//     brBtn.innerHTML = "Contact <br> &darr;";
+    // setting activeCorner
+    activeCorner = "bottom-right";
+    brBtn.innerHTML = "Contact <br> &darr;";
 
-//     handleWindowResize();
-//     playAnimation("animate-bottom-right", "reverse-animate-bottom-right");
+    handleWindowResize();
+    playAnimation("animate-bottom-right", "reverse-animate-bottom-right");
 
-//     // Change Background colors
-//     brBtn.style.background = bgColorAlt;
-//     trBtn.style.background = bgColor;
-//     tlBtn.style.background = bgColor;
-//     blBtn.style.background = bgColor;
+    // Change Background colors
+    brBtn.style.background = bgColorAlt;
+    trBtn.style.background = bgColor;
+    tlBtn.style.background = bgColor;
+    blBtn.style.background = bgColor;
     
-//     // Change Text colors
-//     brBtn.style.color = textColorAlt;
-//     trBtn.style.color = textColor;
-//     tlBtn.style.color = textColor;
-//     blBtn.style.color = textColor;
+    // Change Text colors
+    brBtn.style.color = textColorAlt;
+    trBtn.style.color = textColor;
+    tlBtn.style.color = textColor;
+    blBtn.style.color = textColor;
     
-//     // Change positions of the activeCorner
-//     brBtn.style.transform = brActive;
-//     trBtn.style.transform = trHidden;
-//     tlBtn.style.transform = tlHidden;
-//     blBtn.style.transform = blHidden;
-//   }
-// }
+    // Change positions of the activeCorner
+    brBtn.style.transform = brActive;
+    trBtn.style.transform = trHidden;
+    tlBtn.style.transform = tlHidden;
+    blBtn.style.transform = blHidden;
+  }
+}
