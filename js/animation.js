@@ -4,9 +4,9 @@ const heroImage = document.querySelector("#hero__animation__img")
 
 //  mediaquery grid div
 const tlGrid = document.querySelector("#grid__tl");
-// const trGrid = document.querySelector("#grid__tr");
-// const blGrid = document.querySelector("#grid__bl");
-// const brGrid = document.querySelector("#grid__br");
+const trGrid = document.querySelector("#grid__tr");
+const blGrid = document.querySelector("#grid__bl");
+const brGrid = document.querySelector("#grid__br");
 
 //  mediaquery buttons
 const tlBtn = document.querySelector("#grid__tl__btn");
