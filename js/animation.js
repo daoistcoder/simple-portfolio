@@ -21,9 +21,9 @@ const trContent = document.querySelector("#grid__tr__content");
 const blContent = document.querySelector("#grid__bl__content");
 const brContent = document.querySelector("#grid__br__content");
 
-// const project1 = document.querySelector(".p-1")
-// const project2 = document.querySelector(".p-2")
-// const project3 = document.querySelector(".p-3")
+const project1 = document.querySelector(".p-1")
+const project2 = document.querySelector(".p-2")
+const project3 = document.querySelector(".p-3")
 
 //  Define colors and positions 
 const bgColor = "var(--bg)";
