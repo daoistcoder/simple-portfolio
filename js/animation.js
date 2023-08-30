@@ -48,12 +48,12 @@ let brHidden = "translateX(100vw) translateY(100vh)";
 let activeCorner = "";
 
 // handles the styling when window is resized
-// const handleWindowResize = () => {
+const handleWindowResize = () => {
   
-// }
+}
 
   // event listener to window{} for resize events
-// window.addEventListener("resize", handleWindowResize);
+window.addEventListener("resize", handleWindowResize);
 
 // store last reverse animation, ready to be played
 let lastReverseAnimation = "";
