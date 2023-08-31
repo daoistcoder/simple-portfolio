@@ -66,3 +66,56 @@
     background-image: var(--tl-1);
   }
 } 
+
+
+/* --> ANIMATE TOP Right */
+.animate-top-right,
+.reverse-animate-top-right {
+  animation-fill-mode: forwards;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.animate-top-right {
+  animation-name: top-right;
+}
+
+@keyframes top-right {
+  0% {
+    background-image: var(--tr-1);
+  }
+  25% {
+    background-image: var(--tr-2);
+  }
+  50% {
+    background-image: var(--tr-3);
+  }
+  75% {
+    background-image: var(--tr-4);
+  }
+  100% {
+    background-image: var(--tr-5);
+  }
+} 
+.reverse-animate-top-right {
+  animation-name: reverse-top-right;
+}
+
+@keyframes reverse-top-right {
+  0% {
+    background-image: var(--tr-5);
+  }
+  25% {
+    background-image: var(--tr-4);
+  }
+  50% {
+    background-image: var(--tr-3);
+  }
+  75% {
+    background-image: var(--tr-2);
+  }
+  100% {
+    background-image: var(--tr-1);
+  }
+} 
