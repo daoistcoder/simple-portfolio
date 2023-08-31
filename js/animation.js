@@ -41,7 +41,7 @@ let trHidden = "translateX(100vw) translateY(-100vh)";
 let blActive = "translateX(10vw) translateY(7vh)";
 let blHidden = "translateX(-100vw) translateY(100vh)";
 
-let brActive = "translateX(-5vw) translateY(0)";
+let brActive = "translateX(-10vw) translateY(7vh)";
 let brHidden = "translateX(100vw) translateY(100vh)";
 
 // manipulate grid div animation
