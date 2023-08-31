@@ -90,6 +90,25 @@ const playClosingAnimation = (reverseAnimation) => {
       tlContent.style.transform = tlHidden;
       break;
 
+    case "top-right":
+      trBtn.style.background = bgColor;
+      trBtn.style.color = textColor;
+      trContent.style.transform = trHidden;
+      break;
+    
+    case "bottom-left":
+      blBtn.style.background = bgColor;
+      blBtn.style.color = textColor;
+      blContent.style.transform = blHidden;
+      break;
+    
+    case "bottom-right":
+      brBtn.style.background = bgColor;
+      brBtn.style.color = textColor;
+      brContent.style.transform = brHidden;
+      break;
+    
+
       default:
   }
 
@@ -151,7 +170,7 @@ trBtn.onclick = () => {
 
     // setting activeCorner
     activeCorner = "top-right";
-    trBtn.innerHTML = "&uaar; <br> Experience";
+    trBtn.innerHTML = "&uarr; <br> Experience";
 
     handleWindowResize();
     playAnimation("animate-top-right", "reverse-animate-top-right");
@@ -169,7 +188,7 @@ trBtn.onclick = () => {
     brBtn.style.color = textColor;
     
     // Change positions of the activeCorner
-    trBtn.style.transform = trActive;
+    trContent.style.transform = trActive;
     tlBtn.style.transform = tlHidden;
     blBtn.style.transform = blHidden;
     brBtn.style.transform = brHidden;
@@ -206,7 +225,7 @@ blBtn.onclick = () => {
     brBtn.style.color = textColor;
     
     // Change positions of the activeCorner
-    blBtn.style.transform = blActive;
+    blContent.style.transform = blActive;
     tlBtn.style.transform = tlHidden;
     trBtn.style.transform = trHidden;
     brBtn.style.transform = brHidden;
@@ -243,7 +262,7 @@ brBtn.onclick = () => {
     blBtn.style.color = textColor;
     
     // Change positions of the activeCorner
-    brBtn.style.transform = brActive;
+    brContent.style.transform = brActive;
     trBtn.style.transform = trHidden;
     tlBtn.style.transform = tlHidden;
     blBtn.style.transform = blHidden;
