@@ -82,6 +82,9 @@ const playAnimation = (animation, reverseAnimation) => {
 // play closing animation animation handler
 const playClosingAnimation = (reverseAnimation) => {
   tlBtn.innerHTML = "About";
+  trBtn.innerHTML = "Experience";
+  blBtn.innerHTML = "Projects";
+  brBtn.innerHTML = "Contact";
 
   switch(activeCorner) {
     case "top-left":
