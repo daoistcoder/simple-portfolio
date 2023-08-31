@@ -221,8 +221,8 @@ article {
 
  #grid__bl__content {
   width: 30vw;
-  top: 10vh;
-  left: 0;
+  bottom: 15vh;
+  left: 0vw;
   transform: translateX(-100vw) translateY(100vh);
  }
 
@@ -236,7 +236,7 @@ article {
 
  #grid__br__content {
   width: 30vw;
-  top: 10vh;
-  right: 0;
+  bottom: 0;
+  right: 0vw;
   transform: translateX(100vw) translateY(100vh);
  }
