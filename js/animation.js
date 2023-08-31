@@ -41,7 +41,7 @@ let trHidden = "translateX(100vw) translateY(-100vh)";
 let blActive = "translateX(10vw) translateY(7vh)";
 let blHidden = "translateX(-100vw) translateY(100vh)";
 
-let brActive = "translateX(-10vw) translateY(7vh)";
+let brActive = "translateX(-5vw) translateY(0)";
 let brHidden = "translateX(100vw) translateY(100vh)";
 
 // manipulate grid div animation
@@ -112,7 +112,7 @@ const playClosingAnimation = (reverseAnimation) => {
       break;
     
 
-      default:
+    default:
   }
 
   heroImage.className = "";
@@ -155,9 +155,9 @@ tlBtn.onclick = () => {
     
     // Change positions of the activeCorner
     tlContent.style.transform = tlActive;
-    trBtn.style.transform = trHidden;
-    blBtn.style.transform = blHidden;
-    brBtn.style.transform = brHidden;
+    trContent.style.transform = trHidden;
+    blContent.style.transform = blHidden;
+    brContent.style.transform = brHidden;
   }
 }
 
@@ -192,9 +192,9 @@ trBtn.onclick = () => {
     
     // Change positions of the activeCorner
     trContent.style.transform = trActive;
-    tlBtn.style.transform = tlHidden;
-    blBtn.style.transform = blHidden;
-    brBtn.style.transform = brHidden;
+    tlContent.style.transform = tlHidden;
+    blContent.style.transform = blHidden;
+    brContent.style.transform = brHidden;
   }
 }
 
@@ -229,9 +229,9 @@ blBtn.onclick = () => {
     
     // Change positions of the activeCorner
     blContent.style.transform = blActive;
-    tlBtn.style.transform = tlHidden;
-    trBtn.style.transform = trHidden;
-    brBtn.style.transform = brHidden;
+    tlContent.style.transform = tlHidden;
+    trContent.style.transform = trHidden;
+    brContent.style.transform = brHidden;
   }
 }
 
@@ -266,8 +266,8 @@ brBtn.onclick = () => {
     
     // Change positions of the activeCorner
     brContent.style.transform = brActive;
-    trBtn.style.transform = trHidden;
-    tlBtn.style.transform = tlHidden;
-    blBtn.style.transform = blHidden;
+    trContent.style.transform = trHidden;
+    tlContent.style.transform = tlHidden;
+    blContent.style.transform = blHidden;
   }
 }
